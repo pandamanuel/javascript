@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+            background-color: rgb(20, 135, 212);
+            font: normal 15pt arial;
+        }
+        section{
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            width: 500px;
+            margin: auto;
+            box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.733);
+        }
+        footer{
+        color: white;
+        text-align: center;
+        font-style: italic;
+        }
+        header{
+        color: white;
+        text-align: center;
+           
+        }
+        div{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+   <header>
+    <h1>Verificador de Idade</h1>
+   </header>
+   <section>
+<div>
+<p>Ano de Nascimento 
+<input type="number" name="n" id="n">
+</p>
+<p>Sexo
+<input type="radio" name="r" id="mas" checked>
+<label for="ra">Masculino</label>
+<input type="radio" name="r" id="fem" >
+<label for="fem">Femenino</label>
+</p>
+<p><input type="button" value="Verificar" onclick="verificar()"></p>
+</div>
+<div id="res">
+    prencha
+
+</div>
+   </section>
+   <footer>
+    <p>&copy; Panda Manuel</p>
+   </footer> 
+   <script src="script.js"></script>
+</body>
+</html>

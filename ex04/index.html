@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condiçôes</title>
+    <style>
+    input#vel{
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    </style>
+</head>
+<body>
+   <input type="number" name="vel" id="vel"> <br>
+   <input type="submit" value="Verificar" onclick="calcular()"> 
+   <div id="res">RES</div>
+   <script>
+    function calcular() {
+       var velo=window.document.getElementById('vel') 
+       var res=window.document.getElementById('res')
+       var veloc=Number(velo.value)
+       res.innerHTML=`${veloc} `
+       if (veloc > 60) {
+        res.innerHTML +=`Panda`
+       } 
+    }  
+    
+   </script>
+</body>
+</html>
